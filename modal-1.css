@@ -1,0 +1,444 @@
+.modal-overlay {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	min-height: 2158px;
+	background: rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	z-index: 4;
+	display: none;
+}
+.pledge-container-show {
+	display: flex;
+}
+.pledge-container {
+	background: white;
+	position: absolute;
+	width: 730px;
+	min-height: 905px;
+	top: 185px;
+	border-radius: 10px;
+	z-index: 5;
+	padding: 0 47px;
+	padding-bottom: 30px;
+	display: none;
+}
+.pledge-container-visible {
+	display: block;
+}
+.pledge-close-btn {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	background: url(images/icon-close-modal.svg) no-repeat center;
+	background-size: cover;
+	cursor: pointer;
+}
+.modal-h2 {
+	margin: 0;
+	padding: 0;
+	margin-top: 46px;
+	font-size: 26px;
+	font-weight: 700;
+	letter-spacing: -1px;
+}
+.support-text {
+	margin: 0;
+	margin-top: 20px;
+	text-align: left;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: -1px;
+}
+.pledges {
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	min-height: 160px;
+	margin-top: 20px;
+}
+.pledges:focus {
+	outline: 2px solid hsl(176, 50%, 47%);
+}
+.pledge1 {
+	margin-top: 35px;
+}
+.radio-label {
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	position: relative;
+	padding-left: 77px;
+	top: 32px;
+	font-size: 18px;
+	letter-spacing: -1px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.radio-label:hover:not(.radio-label-gray) {
+	color: hsl(176, 50%, 47%);
+}
+.green-label {
+	color: hsl(176, 50%, 47%);
+	margin-left: 20px;
+}
+.m-label {
+	display: none;
+}
+.modal-product-number {
+	margin-left: 200px;
+}
+.modal-product-number3 {
+	margin-left: 170px;	
+}
+.modal-left {
+	margin-left: 5px;
+	font-size: 15px;
+	color: hsla(0, 0%, 48%, 1.0);
+	font-weight: 500;
+}
+.radio {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	left: 0;
+}
+.radio-btn {
+	position: absolute;
+	top: 3px;
+	left: 29px;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	border: 2px solid hsla(0, 0%, 68%, 1.0);
+}
+.radio-border1, .radio-border2, .radio-border3 {
+	outline: 3px dotted green;
+	outline-offset: 5px;
+}
+.radio-btn::after {
+	content: "";
+	position: absolute;
+	display: none;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	background: hsl(176, 50%, 47%);
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+}
+.radio:checked ~ .radio-btn::after {
+	display: block;
+}
+.pledge-para {
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	margin-top: 50px;
+	padding-left: 77px;
+	padding-right: 20px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 27px;
+}
+.pledge-para-2 {
+	letter-spacing: -1px;
+}
+.hidden-div {
+	min-height: 100px;
+	margin-top: 30px;
+	border-top: 1px solid hsl(0, 0%, 85%, 1.0);
+	border-radius: 0 0 10px 10px;
+	padding: 0 28px;
+	position: relative;
+	display: none;
+}
+.hidden-div-show {
+	display: block;
+}
+.hidden-div label {
+	display: block;
+	margin-top: 25px;
+	font-size: 16px;
+	font-weight: 500;
+	color: hsl(0, 0%, 48%, 1.0);
+	position: relative;
+}
+.pledge-amount {
+	margin-left: 225px;
+	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
+	border-radius: 30px;
+	width: 100px;
+	height: 50px;
+	border: 1px solid hsl(0, 0%, 80%, 1.0);
+	font-size: 16px;
+	font-weight: 700;
+	color: black;
+}
+.pledge-amount:focus {
+	outline: 1px solid hsl(176, 50%, 47%);
+}
+.dollar-sign {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	right: 193px;
+	font-size: 14px;
+	font-weight: 500;
+	color: hsl(0, 0%, 48%, 1.0);
+}
+.pledge-continue-btn {
+	margin-left: 15px;
+	display: inline-block;
+	border-radius: 30px;
+	width: 100px;
+	height: 50px;
+	border: none;
+	font-size: 16px;
+	font-weight: 500;
+	background: hsl(176, 50%, 47%);
+	transition: 0.3s;
+	color: white;
+	cursor: pointer;
+	letter-spacing: -1px;
+}
+.pledge-continue-btn-1 {
+	margin-top: 25px;
+	position: absolute;
+	right: 30px;
+}
+.pledge-continue-btn:hover {
+	background: hsl(176, 72%, 28%);
+}
+.radio-label-gray {
+	color: gray;
+}
+.gray-label {
+	color: hsl(173, 22%, 64%);
+}
+.modal-product-number4 {
+	margin-left: 120px;
+}
+.modal-left-gray {
+	color: hsl(0, 0%, 80%, 1.0);
+}
+.pledge-para-4 {
+	color: hsl(0, 0%, 80%, 1.0);
+	letter-spacing: -1px;
+}
+.m-div {
+	display: none;
+}
+
+@media screen and (max-width: 800px) {
+	.modal-overlay {
+		min-height: 2720px;
+	}
+	.pledge-container {
+		top: 122px;
+		width: 87%;
+		min-height: 1358px;
+		padding: 0 23px;
+		padding-bottom: 25px;
+	}
+	.pledge-close-btn {
+		top: 35px;
+		right: 22px;
+		width: 16px;
+		height: 16px;
+	}
+	.modal-h2 {
+		margin-top: 30px;
+		font-size: 20px;
+		font-weight: 800;
+	}
+	.support-text {
+		padding: 0;
+		font-size: 16px;
+	}
+	.pledges {
+		margin-top: 30px;
+	}
+	.pledge1 {
+		margin-top: 25px;
+	}
+	.radio-label {
+		padding-left: 65px;
+		top: 35px;
+		font-size: 16px;
+	}
+	.radio-btn {
+		top: 0;
+		left: 24px;
+	}
+	.radio-btn-2, .radio-btn-3, .radio-btn-4 {
+		top: 10px;
+	}
+	.pledge-para {
+		text-align: left;
+		margin: 0;
+		padding: 0;
+		margin-top: 70px;
+		padding-left: 25px;
+		padding-right: 25px;
+		font-size: 14px;
+		line-height: 24px;
+		padding-bottom: 0;
+		letter-spacing: initial;
+	}
+	.pledge2, .pledge3, .pledge4 {
+		margin-top: 27px;
+	}
+	.pledge-para-1 {
+		padding-bottom: 30px;
+	}
+	.pledge-para-2, .pledge-para-3, .pledge-para-4 {
+		margin: 0;
+		margin-top: 25px;
+		padding-bottom: 0;
+	}
+	.radio-label-2, .radio-label-3, .radio-label-gray {
+		margin: 0;
+		padding: 0;
+		top: 20px;
+		padding-left: 63px;
+	}
+	.radio-border1, .radio-border2, .radio-border3 {
+		outline: none;
+		outline-offset: initial;
+	}
+	.green-label {
+		display: none;
+	}
+	.m-label {
+		display: block;
+		color: hsl(176, 50%, 47%);
+		font-size: 14px;
+		font-weight: 700;
+		padding-left: 63px;
+		margin-top: 28px;
+	}
+	.modal-product-number {
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 212px;
+		left: 25px;
+		font-size: 18px;
+	}
+	.modal-left {
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 212px;
+		left: 61px;
+		font-size: 16px;
+	}
+	.modal-left-3 {
+		left: 55px;
+	}
+	.m-label-gray {
+		color: hsl(173, 22%, 64%)
+	}
+	.modal-left-gray {
+		left: 45px;
+	}
+	.hidden-div {
+		margin-top: 0;
+		padding: 0 24px;
+		padding-bottom: 24px;
+	}
+	.hidden-div-show {
+		display: block;
+	}
+	.hidden-div label {
+		margin-top: 20px;
+		font-size: 14px;
+	}
+	.pledge-amount {
+		display: block;
+		margin-top: 10px;
+		margin-left: 0;
+		width: 100%;
+		height: 35px;
+		text-align: left;
+	}
+	.dollar-sign {
+		top: 40%;
+		left: 20px;
+		transform: translateY(-40%);
+		-webkit-transform: translateY(-40%);
+		right: initial;
+	}
+	.pledge-continue-btn {
+		margin-top: 10px;
+		margin-left: 0;
+		display: block;
+		width: 100%;
+		height: 35px;
+	}
+	.pledge-continue-btn-1 {
+		position: initial;
+		margin-top: 30px;
+	}
+	.modal-product-number, .modal-left {
+		display: none;
+	}
+	.m-div {
+		display: block;
+		margin-top: 20px;
+		padding-bottom: 35px;
+		padding-left: 24px;
+	}
+	.m-product {
+		font-size: 18px;
+		font-weight: 700;
+	}
+	.m-text {
+		margin-left: 7px;
+		font-size: 16px;
+		font-weight: 500;
+		color: gray;
+	}
+	.m-product-gray {
+		color: gray;
+	}
+	.m-text-left {
+		color: lightgray;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	.modal-h2 {
+		font-size: 16px;
+	}
+	.m-label, .radio-label, .pledge-para {
+		font-size: 12px;
+	}
+	.radio-btn {
+		width: 18px;
+		height: 18px;
+	}
+	.radio-btn::after {
+		width: 8px;
+		height: 8px;
+	}
+}
+@media screen and (max-width: 274px) {
+	.m-label, .radio-label, .pledge-para {
+		font-size: 10px;
+	}	
+}
+@media screen and (max-width: 230px) {
+	.m-label, .radio-label, .pledge-para {
+		font-size: 7px;
+	}	
+}
